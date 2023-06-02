@@ -14,19 +14,19 @@ function NavBar() {
         <div className="hidden md:block md:w-1/3">
           <ul className="md:flex md:flex-row md:gap-3 md:w">
             <li>
-              <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="hover:underline" href="/">Accueil</Link>
+              <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="hover:underline hover:underline-offset-4" href="/">Accueil</Link>
             </li>
             <li>
-              <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="hover:underline"  href="/menu">Menu</Link>
+              <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="hover:underline hover:underline-offset-4"  href="/menu">Menu</Link>
             </li>
             <li>
-              <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="hover:underline"  href="/chef">Chef</Link>
+              <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="hover:underline hover:underline-offset-4"  href="/chef">Chef</Link>
             </li>
             <li>
-              <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="hover:underline"  href="/reservations">Réservations</Link>
+              <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="hover:underline hover:underline-offset-4"  href="/reservations">Réservations</Link>
             </li>
             <li>
-              <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="hover:underline"  href="/lieu">Lieu</Link>
+              <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="hover:underline hover:underline-offset-4"  href="/lieu">Lieu</Link>
             </li>
           </ul>
         </div>
@@ -56,21 +56,21 @@ function NavBar() {
       >
         <ul className="flex flex-col gap-5 items-center justify-center">
           <li>
-            <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="text-3xl tracking-wider hover:underline" href="/">
+            <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="text-3xl tracking-wider hover:underline hover:underline-offset-4" href="/">
               Accueil
             </Link>
           </li>
           <li>
-            <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="text-3xl tracking-wider hover:underline" href="/menu">Menu</Link>
+            <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="text-3xl tracking-wider hover:underline hover:underline-offset-4" href="/menu">Menu</Link>
           </li>
           <li>
-            <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="text-3xl tracking-wider hover:underline" href="/chef">Chef</Link>
+            <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="text-3xl tracking-wider hover:underline hover:underline-offset-4" href="/chef">Chef</Link>
           </li>
           <li>
-            <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="text-3xl tracking-wider hover:underline" href="/reservations">Réservations</Link>
+            <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="text-3xl tracking-wider hover:underline hover:underline-offset-4" href="/reservations">Réservations</Link>
           </li>
           <li>
-            <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="text-3xl tracking-wider hover:underline" href="/lieu">Lieu</Link>
+            <Link onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)} className="text-3xl tracking-wider hover:underline hover:underline-offset-4" href="/lieu">Lieu</Link>
           </li>
         </ul>
       </div>
