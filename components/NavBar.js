@@ -9,7 +9,7 @@ function NavBar() {
 
   return (
     <div className="flex flex-col max-w-8xl m-auto z-50">
-      <div className="fixed top-0 left-0 bg-white h-24 w-full flex flex-row justify-between items-center p-8">
+      <div style={{"z-index": "9999"}} className="fixed top-0 left-0 bg-orange-300 h-24 w-full flex flex-row justify-between items-center p-8">
         {/* LEFT - MENU */}
         <div className="hidden md:block md:w-1/3">
           <ul className="md:flex md:flex-row md:gap-3 md:w">

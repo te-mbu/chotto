@@ -2,8 +2,8 @@ import React from "react";
 import { useFormik, Field, Form, Formik } from "formik";
 
 function ReservationsPage() {
-    const currentDate = new Date();
-const formattedDate = currentDate.toISOString().split('T')[0];
+  const currentDate = new Date();
+  const formattedDate = currentDate.toISOString().split("T")[0];
   const formik = useFormik({
     initialValues: {
       prenom: "",
@@ -36,9 +36,9 @@ const formattedDate = currentDate.toISOString().split('T')[0];
   });
 
   return (
-    <div className="mt-24 w-11/12 flex flex-col items-center m-auto">
-      <h1 className="text-2xl p-14">+ 555 1234 5678</h1>
-      <p className="leading-relaxed">
+    <div className="mt-24 w-5/6 flex flex-col items-center m-auto md:max-w-3xl">
+      <h1 className="text-4xl my-20 m-auto">+ 555 1234 5678</h1>
+      <p className="leading-loose">
         Veuillez réserver au moins deux semaines à l’avance à l’aide du
         formulaire ci-dessous. En cas de réservation pour la semaine suivante ou
         de groupe de plus de quatre personnes, veuillez nous appeler au numéro
@@ -47,15 +47,12 @@ const formattedDate = currentDate.toISOString().split('T')[0];
       </p>
       <Formik>
         <Form
-          className="flex flex-col items-center gap-5 my-14"
+          className="flex flex-col items-center gap-10 my-14"
           onSubmit={formik.handleSubmit}
         >
-          <h2 className="w-full">
-            Nom <span className="text-slate-500">(obligatoire)</span>
-          </h2>
-          <div className="flex flex-row gap-4">
-            <div id="prenom">
-              <h2>Prénom</h2>
+          <div className="flex flex-row gap-4 w-full">
+            <div id="prenom" className="w-full">
+              <h2 className="mb-2">Prénom <span className="text-slate-500">(obligatoire)</span></h2>
               <div className="w-full rounded-lg overflow-hidden max-w-5xl">
                 <Field
                   id="prenom"
@@ -67,8 +64,8 @@ const formattedDate = currentDate.toISOString().split('T')[0];
                 />
               </div>
             </div>
-            <div id="nomdefamille">
-              <h2>Nom de famille</h2>
+            <div id="nomdefamille" className="w-full">
+              <h2 className="mb-2">Nom de famille <span className="text-slate-500">(obligatoire)</span></h2>
               <div className="w-full rounded-lg overflow-hidden max-w-5xl">
                 <Field
                   id="nomdefamille"
@@ -82,7 +79,7 @@ const formattedDate = currentDate.toISOString().split('T')[0];
             </div>
           </div>
           <div id="email" className="w-full">
-            <h2>
+            <h2 className="mb-2">
               E-mail <span className="text-slate-500">(obligatoire)</span>
             </h2>
             <div className="w-full rounded-lg overflow-hidden max-w-5xl">
@@ -98,7 +95,7 @@ const formattedDate = currentDate.toISOString().split('T')[0];
           </div>
           <div id="numero" className="w-full">
             <h2>Numéro</h2>
-            <p className="text-slate-500 py-1">
+            <p className="text-slate-500 py-1 mb-2">
               Nous vous appellerons pour confirmer votre réservation au moins 24
               heures avant.
             </p>
@@ -114,7 +111,7 @@ const formattedDate = currentDate.toISOString().split('T')[0];
             </div>
           </div>
           <div id="remarques" className="w-full">
-            <h2>
+            <h2 className="mb-2">
               Remarques <span className="text-slate-500">(obligatoire)</span>
             </h2>
             <div className="w-full rounded-lg overflow-hidden max-w-5xl">
@@ -129,7 +126,7 @@ const formattedDate = currentDate.toISOString().split('T')[0];
             </div>
           </div>
           <div id="date" className="w-full">
-            <h2>
+            <h2 className="mb-2">
               Date <span className="text-slate-500">(obligatoire)</span>
             </h2>
             <div className="w-full rounded-lg overflow-hidden max-w-5xl">
@@ -144,8 +141,9 @@ const formattedDate = currentDate.toISOString().split('T')[0];
             </div>
           </div>
           <div id="nbPersonnes" className="w-full">
-            <h2>
-              Nombre de personnes <span className="text-slate-500">(obligatoire)</span>
+            <h2 className="mb-2">
+              Nombre de personnes{" "}
+              <span className="text-slate-500">(obligatoire)</span>
             </h2>
             <div className="w-full rounded-lg overflow-hidden max-w-5xl">
               <Field
@@ -164,7 +162,7 @@ const formattedDate = currentDate.toISOString().split('T')[0];
             </div>
           </div>
           <div id="heure" className="w-full">
-            <h2>
+            <h2 className="mb-2">
               Heure <span className="text-slate-500">(obligatoire)</span>
             </h2>
             <div className="w-full rounded-lg overflow-hidden max-w-5xl">
