@@ -51,7 +51,7 @@ function ReservationsPage() {
           onSubmit={formik.handleSubmit}
         >
           <div className="flex flex-row gap-4 w-full">
-            <div id="prenom" className="w-full">
+            <div id="prenom" className="w-[90%]">
               <h2 className="mb-2">Prénom <span className="text-slate-500">(obligatoire)</span></h2>
               <div className="w-full rounded-lg overflow-hidden max-w-5xl">
                 <Field

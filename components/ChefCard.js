@@ -3,7 +3,9 @@ import Image from "next/image";
 function ChefCard() {
   return (
     <div className="w-full mt-32 flex flex-col gap-8 items-center m-auto">
-      <Image src="/images/ramen.jpg" width={300} height={300} className="w-full"></Image>
+      <div className="relative aspect-video w-full max-w-7xl">
+        <Image src="/images/ramen.jpg" fill className="w-full"></Image>
+      </div>
       <div className="flex flex-col gap-8 items-center">
         <p className="text-lg">Sapporo, Japon</p>
         <p className="text-3xl">Le commencement</p>

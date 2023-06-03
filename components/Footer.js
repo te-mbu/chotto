@@ -10,15 +10,12 @@ function Footer() {
                 <li>
                     <Link className="underline underline-offset-4" href="/menu">Menu</Link>
                 </li>
-                <span className="">.</span>
                 <li>
                     <Link className="underline underline-offset-4" href="/chef">Chef</Link>
                 </li>
-                <span>.</span>
                 <li>
                     <Link className="underline underline-offset-4" href="/reservations">Réservations</Link>
                 </li>
-                <span>.</span>
                 <li>
                     <Link className="underline underline-offset-4" href="/lieu">Adresse</Link>
                 </li>
