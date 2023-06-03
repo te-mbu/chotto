@@ -9,8 +9,12 @@ function Home() {
           <h1 className="text-4xl md:text-5xl">Hong Kong</h1>
         </div>
         <div className="aspect-square w-full relative">
-
-        <Image className="object-cover" src="/images/japanese-dish.jpeg" fill alt="Japanese Dish"></Image>
+          <Image
+            className="object-cover"
+            src="/images/japanese-dish.jpeg"
+            fill
+            alt="Japanese Dish"
+          ></Image>
         </div>
         <div className="flex flex-col w-full gap-4 items-center m-16">
           <h2 className="text-4xl md:text-5xl">De midi à minuit</h2>
