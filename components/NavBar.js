@@ -102,7 +102,7 @@ function NavBar() {
           Chotto
         </Link>
         {/* RIGHT - BARS */}
-        <div className="md:hidden">
+        <div className="md:hidden cursor-pointer">
           <FontAwesomeIcon
             icon={faBars}
             width={25}
