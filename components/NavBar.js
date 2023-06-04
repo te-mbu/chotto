@@ -2,10 +2,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function NavBar() {
   const [isToggleMenuOpen, setIsToggleMenuOpen] = useState(false);
+  const [selectedPage, setSelectedPage] = useState("");
+
+  useEffect(() => {
+    setSelectedPage("accueil");
+  }, []);
 
   return (
     <div className="flex flex-col w-full max-w-8xl m-auto z-50">
@@ -18,8 +23,15 @@ function NavBar() {
           <ul className="md:flex md:flex-row md:gap-3 md:w">
             <li>
               <Link
-                onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)}
-                className="hover:underline hover:underline-offset-4"
+                onClick={() => {
+                  setIsToggleMenuOpen(!isToggleMenuOpen);
+                  setSelectedPage("accueil");
+                }}
+                className={`${
+                  selectedPage === "accueil"
+                    ? "underline underline-offset-4"
+                    : ""
+                }`}
                 href="/"
               >
                 Accueil
@@ -27,8 +39,13 @@ function NavBar() {
             </li>
             <li>
               <Link
-                onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)}
-                className="hover:underline hover:underline-offset-4"
+                onClick={() => {
+                  setIsToggleMenuOpen(!isToggleMenuOpen);
+                  setSelectedPage("menu");
+                }}
+                className={`${
+                  selectedPage === "menu" ? "underline underline-offset-4" : ""
+                }`}
                 href="/menu"
               >
                 Menu
@@ -36,8 +53,13 @@ function NavBar() {
             </li>
             <li>
               <Link
-                onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)}
-                className="hover:underline hover:underline-offset-4"
+                onClick={() => {
+                  setIsToggleMenuOpen(!isToggleMenuOpen);
+                  setSelectedPage("chef");
+                }}
+                className={`${
+                  selectedPage === "chef" ? "underline underline-offset-4" : ""
+                }`}
                 href="/chef"
               >
                 Chef
@@ -45,8 +67,15 @@ function NavBar() {
             </li>
             <li>
               <Link
-                onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)}
-                className="hover:underline hover:underline-offset-4"
+                onClick={() => {
+                  setIsToggleMenuOpen(!isToggleMenuOpen);
+                  setSelectedPage("reservations");
+                }}
+                className={`${
+                  selectedPage === "reservations"
+                    ? "underline underline-offset-4"
+                    : ""
+                }`}
                 href="/reservations"
               >
                 Réservations
@@ -54,8 +83,13 @@ function NavBar() {
             </li>
             <li>
               <Link
-                onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)}
-                className="hover:underline hover:underline-offset-4"
+                onClick={() => {
+                  setIsToggleMenuOpen(!isToggleMenuOpen);
+                  setSelectedPage("lieu");
+                }}
+                className={`${
+                  selectedPage === "lieu" ? "underline underline-offset-4" : ""
+                }`}
                 href="/lieu"
               >
                 Lieu
@@ -64,7 +98,7 @@ function NavBar() {
           </ul>
         </div>
         {/* MIDDLE - RESTAURENT NAME */}
-        <Link href="/" className="text-2xl md:w-1/3">
+        <Link href="/" className="text-2xl md:w-1/3" onClick={() => setIsToggleMenuOpen(false)}>
           Chotto
         </Link>
         {/* RIGHT - BARS */}
@@ -97,8 +131,13 @@ function NavBar() {
         <ul className="flex flex-col gap-5 items-center justify-center">
           <li>
             <Link
-              onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)}
-              className="text-3xl tracking-wider hover:underline hover:underline-offset-4"
+              onClick={() => {
+                setIsToggleMenuOpen(!isToggleMenuOpen);
+                setSelectedPage("accueil");
+              }}
+              className={`text-3xl tracking-wider ${
+                selectedPage === "accueil" ? "underline underline-offset-4" : ""
+              }`}
               href="/"
             >
               Accueil
@@ -106,8 +145,13 @@ function NavBar() {
           </li>
           <li>
             <Link
-              onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)}
-              className="text-3xl tracking-wider hover:underline hover:underline-offset-4"
+              onClick={() => {
+                setIsToggleMenuOpen(!isToggleMenuOpen);
+                setSelectedPage("menu");
+              }}
+              className={`text-3xl tracking-wider ${
+                selectedPage === "menu" ? "underline underline-offset-4" : ""
+              }`}
               href="/menu"
             >
               Menu
@@ -115,8 +159,13 @@ function NavBar() {
           </li>
           <li>
             <Link
-              onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)}
-              className="text-3xl tracking-wider hover:underline hover:underline-offset-4"
+              onClick={() => {
+                setIsToggleMenuOpen(!isToggleMenuOpen);
+                setSelectedPage("chef");
+              }}
+              className={`text-3xl tracking-wider ${
+                selectedPage === "chef" ? "underline underline-offset-4" : ""
+              }`}
               href="/chef"
             >
               Chef
@@ -124,8 +173,13 @@ function NavBar() {
           </li>
           <li>
             <Link
-              onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)}
-              className="text-3xl tracking-wider hover:underline hover:underline-offset-4"
+              onClick={() => {
+                setIsToggleMenuOpen(!isToggleMenuOpen);
+                setSelectedPage("reservations");
+              }}
+              className={`text-3xl tracking-wider ${
+                selectedPage === "reservations" ? "underline underline-offset-4" : ""
+              }`}
               href="/reservations"
             >
               Réservations
@@ -133,8 +187,13 @@ function NavBar() {
           </li>
           <li>
             <Link
-              onClick={() => setIsToggleMenuOpen(!isToggleMenuOpen)}
-              className="text-3xl tracking-wider hover:underline hover:underline-offset-4"
+              onClick={() => {
+                setIsToggleMenuOpen(!isToggleMenuOpen);
+                setSelectedPage("lieu");
+              }}
+              className={`text-3xl tracking-wider ${
+                selectedPage === "lieu" ? "underline underline-offset-4" : ""
+              }`}
               href="/lieu"
             >
               Lieu
