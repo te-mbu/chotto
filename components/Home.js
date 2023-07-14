@@ -10,10 +10,12 @@ function Home() {
         </div>
         <div className="aspect-square w-full relative">
           <Image
-            className="object-cover"
             src="/images/japanese-dish.jpeg"
             fill
             alt="Japanese Dish"
+            className="object-cover rounded-full border-2 shadow-lg shadow-dark dark:shadow-light"
+            priority
+            sizes="(max-width: 768px) 100vw, 768px"
           ></Image>
         </div>
         <div className="flex flex-col w-full gap-4 items-center m-16">
