@@ -13,7 +13,7 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Next.js App</title>
+        <title>Chotto</title>
         <link rel="stylesheet" />
       </Head>
       <div
