@@ -3,7 +3,7 @@ function MenuCard(props) {
     <div className="w-full flex flex-row">
       <div className="w-[70%] flex flex-col gap-1 pl-5">
         {/* FoodType */}
-        <h2 className="text-xl font-bold">{props.dish}</h2>
+        <p className="text-lg font-semibold">{props.dish}</p>
         {/* Description */}
         <p>{props.description}</p>
       </div>

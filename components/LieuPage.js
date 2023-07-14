@@ -18,16 +18,16 @@ function LieuPage() {
       </div>
 
       <div className="w-full flex flex-col items-center gap-4">
-        <p className="text-4xl md:text-5xl">123 Rue Démo</p>
-        <p className="text-4xl md:text-5xl">Central, HK</p>
-        <p className="text-4xl md:text-5xl">+ 555 1234 5678</p>
+        <p className="text-4xl md:text-5xl font-medium">123 Rue Démo</p>
+        <p className="text-4xl md:text-5xl font-medium">Central, HK</p>
+        <p className="text-4xl md:text-5xl font-medium">+ 555 1234 5678</p>
       </div>
       <div className="w-[100px] aspect-video relative">
         <Image src="/images/vague.png" fill className="object-cover"></Image>
       </div>
       <div className="w-full flex flex-col items-center gap-4">
-        <p className="text-4xl md:text-5xl">De Midi à 22h00</p>
-        <p className="text-4xl md:text-5xl">Tous les jours</p>
+        <p className="text-4xl md:text-5xl font-medium">De Midi à 22h00</p>
+        <p className="text-4xl md:text-5xl font-medium">Tous les jours</p>
       </div>
     </div>
   );

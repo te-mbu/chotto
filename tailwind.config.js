@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const { fontFamily } = require("tailwindcss/defaultTheme");
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -7,9 +8,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        noto: ['Noto Sans JP', 'sans-serif'],
+        mont: ["var(--font-noto)", ...fontFamily.sans],
       },
-      
+      fontWeight: {
+        semibold: '600',
+      },
       maxWidth: {
         '8xl': '96rem'
        },

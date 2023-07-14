@@ -3,7 +3,7 @@ import MenuCard from "./MenuCard";
 function MenuPage() {
   return (
     <div className="my-24 w-11/12 flex flex-col items-center m-auto">
-      <h1 className="text-2xl mt-28 mb-12">Petites assiettes</h1>
+      <h1 className="text-3xl mt-28 mb-12 font-semibold uppercase w-full text-left pl-5">Petites assiettes</h1>
       <div className="w-full flex flex-col gap-4 md:flex-row md:gap-8 max-w-7xl">
         <div className="w-full flex flex-col gap-4 md:gap-8 ">
           <MenuCard
@@ -31,7 +31,7 @@ function MenuPage() {
           />
         </div>
       </div>
-      <h1 className="text-2xl mt-28 mb-12">Ramen</h1>
+      <h1 className="text-3xl mt-28 mb-12 font-semibold uppercase w-full text-left pl-5">Ramen</h1>
       <div className="w-full flex flex-col gap-4 md:flex-row md:gap-8 max-w-7xl">
         <div className="w-full flex flex-col gap-4 md:gap-8 ">
           <MenuCard
@@ -58,7 +58,7 @@ function MenuPage() {
           />
         </div>
       </div>
-      <h1 className="text-2xl mt-28 mb-12">+ Accompagnements</h1>
+      <h1 className="text-3xl mt-28 mb-12 font-semibold uppercase w-full text-left pl-5">+ Accompagnements</h1>
       <div className="w-full flex flex-col gap-4 max-w-4xl lg:flex-row lg:gap-8 lg:max-w-7xl">
         <MenuCard
           dish="GARNITURES"
@@ -71,7 +71,7 @@ function MenuPage() {
           price="2"
         />
       </div>
-      <h1 className="text-2xl mt-28 mb-12">Boissons</h1>
+      <h1 className="text-3xl mt-28 mb-12 font-semibold uppercase w-full text-left pl-5">Boissons</h1>
       <div className="w-full flex flex-col gap-4 md:flex-row md:gap-8 max-w-7xl">
         <div className="w-full flex flex-col gap-4 md:gap-8 ">
         <MenuCard
