@@ -14,13 +14,13 @@ function App({ Component, pageProps }) {
         />
       </Head>
       <div className="min-h-screen flex flex-col justify-between">
-        <div className="font-noto font-semibold">
+        <div className="font-noto">
           <NavBar></NavBar>
         </div>
-        <div className="font-noto font-semibold">
+        <div className="font-noto">
           <Component {...pageProps} />
         </div>
-        <div className="font-noto font-semibold">
+        <div className="font-noto">
           <Footer></Footer>
         </div>
       </div>
